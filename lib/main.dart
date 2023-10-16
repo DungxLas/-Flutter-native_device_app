@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-
 import 'package:google_fonts/google_fonts.dart';
+import 'package:riverpod/riverpod.dart';
+
+import 'package:native_device_app/models/place.dart';
 import 'package:native_device_app/screens/places.dart';
 
 final colorScheme = ColorScheme.fromSeed(
@@ -35,12 +37,14 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
+  //final placesProvider = Provider<List<Place>>((ref) => []);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Great Places',
       theme: theme,
-      home: PlacesScreen(),
+      home: const PlacesScreen(),
     );
   }
 }

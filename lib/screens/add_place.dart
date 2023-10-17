@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:native_device_app/providers/user_places.dart';
+import 'package:native_device_app/widgets/image_input.dart';
 
 class AddScreen extends ConsumerStatefulWidget {
   const AddScreen({super.key});
@@ -49,6 +50,10 @@ class _AddScreenState extends ConsumerState<AddScreen> {
                 color: Theme.of(context).colorScheme.onBackground,
               ),
             ),
+            const SizedBox(
+              height: 10,
+            ),
+            const ImageInput(),
             const SizedBox(
               height: 16,
             ),
